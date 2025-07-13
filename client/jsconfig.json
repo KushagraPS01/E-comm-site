@@ -1,0 +1,26 @@
+{
+  "type": "Compass Connections",
+  "compilerOptions": {
+    "version": true
+  },
+  "connections": [
+    {
+      "id": "d549ae1a-767f-41d3-8482-2a5621206ff3",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1740753690048"
+        }
+      },
+      "favorite": {
+        "name": "e-comm"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}
