@@ -16,3 +16,12 @@ Technologies Used:
 
 
 
+Steps to Start :
+1> clone repo to your machine using "git clone https://github.com/KushagraPS01/E-comm-site.git"
+2> Fill keys and Secret on "server/helpers/...." in cloudinary.js and paypal for Storing images and doing transactions.
+3> Fill username and password to db.js to connect with database.
+4> change direactory to server using "cd server"
+5> now use "npm run dev" to start server 
+
+Now the server should be started at port 5000 or 5173
+use a browser to access localhost.
