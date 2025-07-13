@@ -1,19 +1,12 @@
-const { MongoClient } = require('mongodb');
-const uri = "your-mongodb-connection-string"; // Replace with your MongoDB connection string
+const mongoose = require('mongoose');
 
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+const uri = 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority';
 
-async function connectDB() {
-    try {
-        await client.connect();
-        console.log("Connected to MongoDB");
-        // Perform a simple command to verify the connection
-        const admin = client.db().admin();
-        const info = await admin.serverStatus();
-        console.log("Database info:", info);
-    } catch (err) {
-        console.error("Failed to connect to MongoDB", err);
-    }
-}
-
-module.exports = connectDB;
+// Connect to MongoDB Atlas
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('Connected to MongoDB Atlas successfully!');
+  })
+  .catch(err => {
+    console.error('MongoDB connection error:', err);
+  });
